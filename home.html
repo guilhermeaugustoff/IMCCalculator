@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="sortcut icon" href="img/IMC.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css"
+          href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+          href="css/estilo2.css">
+    <title>IMC - Menu</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-guilherme navbr">
+    <div class="container">
+        <a class="navbar-brand h1 mb-0" href="#">IMC Calculator</a>
+        <div class="collapse navbar-collapse ms-4" id="navbarText">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link mt-1" href="home.html">Menu <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link mt-1" href="home.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="home.html">Critérios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="home.html">Desenvolvedores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mt-1" href="home.html">Sair</a>
+                </li>
+            </ul>
+            <a class="navbar-brand ms-auto" href="#">
+                <img src="img/IMC.png" width="50px" height="50px" alt="" loading="lazy">
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+            <div class="row bg-light mt-5 px-4 pt-4 a">
+            <h1 class="text-center">Calcule o seu IMC</h1>
+                <div class="mb-3 ">
+                    <label for="nome" class="mb-0 g">Nome:</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome;" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                </div>
+            <div class="mb-3 col-md-6 mt-3">
+                <label for="peso" class="mb-0 g">Peso:</label>
+                <div class="input-group input-group-lg">
+                    <input type="number" id="peso" name="peso" class="form-control" placeholder="Digite seu Peso, Ex: 80;" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+            </div>
+                <div class="mb-3 col-md-6 mt-3">
+                <label for="altura" class="mb-0 g">Altura:</label>
+                    <div class="input-group input-group-lg">
+                        <input id="altura" name="altura" class="form-control" placeholder="Digite sua altura, Ex: 1.75;" required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                </div>
+                    <div class="py-3">
+                    <button id="calcular" class="btn btn-outline-guilherme">Calcular</button>
+                        <button type="reset" class="btn btn-outline-warning ms-3">Limpar</button>
+                    </div>
+            </div>
+    <div class="row bg-light mt-5 p-4 a" id='resultado'></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
